@@ -1,29 +1,37 @@
-name: Generate Snake Contribution Graph
+name: Generate Snake Animation
 
 on:
+  # Run automatically every 24 hours
   schedule:
-    - cron: '0 0 * * *' # Runs daily at midnight UTC
+    - cron: "0 0 * * *"
+
+  # Run manually from Actions tab
   workflow_dispatch:
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
+  # Run on push to the main branch (optional)
+  push:
+    branches:
+      - main
 
-      - name: Generate Snake Animation
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate GitHub Contribution Snake
         uses: Platane/snk@v3
         with:
-          github_user_name: urssiva1
+          github_user_name: Logulokesh
           outputs: |
             dist/github-contribution-grid-snake.svg
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
       - name: Push Snake Animation to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
           build_dir: dist
+          allow_empty_commit: true
+          keep_history: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
