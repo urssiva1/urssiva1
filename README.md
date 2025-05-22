@@ -7,10 +7,14 @@
 </h3>
 
 
-<div style="display: flex; align-items: center; justify-content: space-between; font-family: 'Latha', sans-serif;">
-  <img src="2.png" width="150" alt="Thiruvalluvar Left" />
-  
-  <div style="text-align: center; flex-grow: 1; margin: 0 20px;">
+<div style="display: flex; align-items: center; justify-content: center; font-family: 'Latha', sans-serif;">
+  <!-- Left Image -->
+  <div style="flex: 0 0 auto;">
+    <img src="2.png" width="150" alt="Thiruvalluvar Left" />
+  </div>
+
+  <!-- Center Text -->
+  <div style="flex: 1; text-align: center; padding: 0 20px;">
     எனைத்தானும் நல்லவை கற்றார் பிறர்க்கு<br>
     அனைத்ததும் ஆற்றல் அரிது.<br>
     <i>Even if one has learned all good things,<br>
@@ -18,5 +22,9 @@
     — Thirukkural 467, Chapter: Learning (கற்கை)
   </div>
 
-  <img src="1.png" width="150" alt="Thiruvalluvar Right" />
+  <!-- Right Image -->
+  <div style="flex: 0 0 auto;">
+    <img src="1.png" width="150" alt="Thiruvalluvar Right" />
+  </div>
 </div>
+
