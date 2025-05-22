@@ -5,3 +5,9 @@
 <h3 align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&width=435&lines=ML+Engineer;AML+%26+Fraud+Sleuth;LLM+Enthusiast;Part-Time+Chef" alt="Typing Animation" />
 </h3>
+
+
+
+
+# Run the game
+python fraud_hunter_game.py
