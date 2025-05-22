@@ -7,7 +7,16 @@
 </h3>
 
 
+<div style="display: flex; align-items: center; justify-content: space-between; font-family: 'Latha', sans-serif;">
+  <img src="2.png" width="150" alt="Thiruvalluvar Left" />
+  
+  <div style="text-align: center; flex-grow: 1; margin: 0 20px;">
+    எனைத்தானும் நல்லவை கற்றார் பிறர்க்கு<br>
+    அனைத்ததும் ஆற்றல் அரிது.<br>
+    <i>Even if one has learned all good things,<br>
+    It is rare to see them use that knowledge for the benefit of others.</i><br>
+    — Thirukkural 467, Chapter: Learning (கற்கை)
+  </div>
 
-
-# Run the game
-python fraud_hunter_game.py
+  <img src="1.png" width="150" alt="Thiruvalluvar Right" />
+</div>
