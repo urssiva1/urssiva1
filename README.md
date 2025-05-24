@@ -1,22 +1,7 @@
-<table>
-  <tr>
-    <!-- Left image -->
-    <td>
-      <img src="2.png" alt="Thiruvalluvar Left" width="150" />
-    </td>
+<p align="center"><a href="https://google.com"><img width="80%" alt="Hello, I'm Anurag. I do open source!" src="./assets/gh-readme-header.png" /></a></p>
 
-    <!-- Centered text -->
-    <td align="center">
-      எனைத்தானும் நல்லவை கற்றார் பிறர்க்கு<br>
-      அனைத்ததும் ஆற்றல் அரிது.<br>
-      <i>Even if one has learned all good things,<br>
-      It is rare to see them use that knowledge for the benefit of others.</i><br>
-      — Thirukkural 467, Chapter: Learning (கற்கை)
-    </td>
+<br />
 
-    <!-- Right image -->
-    <td>
-      <img src="1.png" alt="Thiruvalluvar Right" width="150" />
-    </td>
-  </tr>
-</table>
+I'm a self-taught passionate 
+
+**About me**
