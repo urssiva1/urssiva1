@@ -1,7 +1,13 @@
-<p align="center"><a href="https://google.com"><img width="80%" alt="Hello, I'm Anurag. I do open source!" src="./assets/gh-readme-header.png" /></a></p>
+<div align="center">
 
-<br />
+![Top Image](name1.png)
 
-I'm a self-taught passionate 
+</div>
 
-**About me**
+Some descriptive text or content between the images (optional).
+
+<div align="center">
+
+![Bottom Image](name2.png)
+
+</div>
