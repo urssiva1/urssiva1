@@ -1,512 +1,1203 @@
-# 🏠 KinAi-Nexpatrol: AI-Powered Home Surveillance System 🤖
+# 🏠 KinAI Vision
+### *Advanced AI-Powered Smart Home Surveillance & Automation Platform*
 
 <div align="center">
 
-![KinAi-Nexpatrol Banner](https://img.shields.io/badge/KinAi--Nexpatrol-AI%20Surveillance-blue?style=for-the-badge&logo=security&logoColor=white)
-[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
-[![NVIDIA](https://img.shields.io/badge/NVIDIA-GPU%20Accelerated-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](https://developer.nvidia.com/cuda-zone)
-[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Telegram](https://img.shields.io/badge/Telegram-Alerts-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://telegram.org/)
+![KinAI Vision Banner](https://img.shields.io/badge/KinAI-Vision-4A90E2?style=for-the-badge&logo=home-assistant&logoColor=white)
 
-**Privacy-First | AI-Driven | GPU-Accelerated | Real-Time Alerts**
+**🔮 Intelligent Surveillance** • **🤖 Smart Automation** • **💬 Personalized Greetings** • **🎵 Music Control** • **🌤️ Weather Integration**
+
+[![Python 3.9+](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)](https://postgresql.org/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://docker.com/)
+[![CUDA](https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white)](https://developer.nvidia.com/cuda-zone)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 </div>
 
 ---
-<!-- Row 1: Identify the Challenge -->
-<table style="width: 100%; border-collapse: collapse; font-family: sans-serif;">
-  <tr>
-    <td style="width: 200px; text-align: center; vertical-align: top; padding: 40px;">
-      <img src="https://raw.githubusercontent.com/Logulokesh/VICTutorAI-Offline-Educational-Activity-Generator/main/identify.png"  width="180" alt="Identify" />
-    </td>
-    <td style="padding: 40px; vertical-align: top;">
-      <h2 style="color: #2563eb; display: flex; align-items: center; gap: 10px; margin-top: 0;">
-        <span style="font-size: 24px;">🔍</span> 1. Identify the Challenge
-      </h2>
-      <p>
-        Traditional home security systems often flood users with constant notifications — triggered by pets, wind-blown branches, or even shifting shadows. This deluge of irrelevant alerts leads to alert fatigue, making it harder for homeowners to notice genuine threats, especially during critical hours like late at night.
-      </p>
-      <div style="font-size: 20px;">⚠️ 🚨 📱 🧠</div>
-    </td>
-  </tr>
-</table>
 
-<!-- Row 2: Engineer the Approach -->
-<table style="width: 100%; border-collapse: collapse; font-family: sans-serif; background-color: #f9f9f9;">
-  <tr>
-    <td style="padding: 40px; vertical-align: top;">
-      <h2 style="color: #16a34a; display: flex; align-items: center; gap: 10px; margin-top: 0;">
-        <span style="font-size: 24px;">⚙️</span> 2. Engineer the Approach
-      </h2>
-      <p>
-        A next-generation surveillance system has been developed using <strong>AI-powered computer vision</strong> and <strong>context-aware behavior analysis</strong>. It learns what “normal” looks like in a given environment and distinguishes harmless movement from potentially dangerous activity.
-      </p>
-      <p>
-        It can detect anomalies—such as an unfamiliar person in dark clothing appearing at 3AM—while filtering out false triggers like a cat walking by or leaves rustling.
-      </p>
-      <div style="font-size: 20px;">🧠 👁️ 🔍 🤖 🎯</div>
-    </td>
-    <td style="width: 200px; text-align: center; vertical-align: top; padding: 40px;">
-      <img src="https://raw.githubusercontent.com/Logulokesh/VICTutorAI-Offline-Educational-Activity-Generator/main/support.png"  width="180" alt="Support" />
-    </td>
-  </tr>
-</table>
+## 🌟 What is KinAI Vision?
 
-<!-- Row 3: Implement the Outcome -->
-<table style="width: 100%; border-collapse: collapse; font-family: sans-serif;">
-  <tr>
-    <td style="width: 200px; text-align: center; vertical-align: top; padding: 40px;">
-      <img src="https://raw.githubusercontent.com/Logulokesh/VICTutorAI-Offline-Educational-Activity-Generator/main/empower.png"  width="180" alt="Empower" />
-    </td>
-    <td style="padding: 40px; vertical-align: top;">
-      <h2 style="color: #dc2626; display: flex; align-items: center; gap: 10px; margin-top: 0;">
-        <span style="font-size: 24px;">✅</span> 3. Implement the Outcome
-      </h2>
-      <p>
-        The result is a highly intelligent alert system that delivers only meaningful, high-priority notifications. By reducing noise and focusing on real risks, this approach gives users true peace of mind, without the stress and distraction of constant false alarms.
-      </p>
-      <div style="font-size: 20px;">🔔 ✅ 🛡️ 🧘‍♂️ 🏠</div>
-    </td>
-  </tr>
-</table>
+KinAI Vision transforms your home into an **intelligent living ecosystem** that recognizes you, welcomes you personally, and automatically adapts to your presence. Imagine walking through your front door and being greeted by name with current weather updates, while your lights illuminate, favorite music begins playing, and climate control adjusts to perfect comfort - all seamlessly automated! 
 
-## 🎯 Overview
-
-KinAi-Nexpatrol is a **privacy-first, AI-driven home surveillance system** designed to eliminate the flood of unnecessary camera notifications. Inspired by anti-financial crime expertise, it leverages **YOLOv8** for person detection, **InsightFace** for face recognition, and **LLMs** (via Ollama) for risk assessment. 
-
-🔐 **Runs completely locally** in a Dockerized environment on an NVIDIA GPU for maximum security and efficiency.
-
----
-
-## 🚀 What KinAi-Nexpatrol Does
-
-KinAi-Nexpatrol processes camera feeds to recognize faces, assess risks, and send alerts only for significant events, reducing notification overload. 
-
-```mermaid
-graph TD
-    A[📹 Camera Feed] --> B{👤 Face Recognition}
-    B -->|Known Face Family| C[✅ No Alert]
-    B -->|❓ Unknown Face| D{🔍 Previously Visited?}
-    D -->|✅ Yes| E[🚩 Flag Returning Visitor]
-    D -->|❌ No| F[🆕 New Visitor Detected]
-    E --> G[🧠 AI Risk Assessment]
-    F --> G
-    G --> H[📱 Telegram Alert with Risk Rating]
-```
+### 🎯 Perfect For:
+- 👨‍👩‍👧‍👦 **Families** seeking personalized smart home experiences
+- 🏠 **Smart Home Enthusiasts** wanting AI-powered automation
+- 🔒 **Security-Conscious Users** requiring intelligent surveillance
+- 🎵 **Music Lovers** enjoying automated ambiance control
+- 🙏 **Devotional Families** following Hindu worship traditions
+- 🏢 **Small Businesses** needing intelligent access monitoring
 
 ---
 
 ## ✨ Key Features
 
-| Feature | Description | Icon |
-|---------|-------------|------|
-| **Multi-Camera Support** | Process multiple camera feeds simultaneously | 📹 |
-| **Advanced Face Recognition** | Identify family members vs unknown visitors | 👥 |
-| **Persistent Visitor Tracking** | Track recurring visitors with unique ULIDs | 🔍 |
-| **AI Risk Assessment** | Smart risk scoring using LLMs | 🧠 |
-| **Instant Telegram Alerts** | Real-time notifications with images | 📱 |
-| **Live Video Monitoring** | Real-time display with labeled bounding boxes | 🖥️ |
-| **Dockerized Deployment** | Easy local setup with full privacy | 🐳 |
-| **SQLite Database** | Comprehensive logging and audit trails | 💾 |
-| **Auto Cleanup** | Automated image cleanup (24hr retention) | 🧹 |
-| **Configurable Settings** | Customizable thresholds and cooldowns | ⚙️ |
-| **n8n Workflow Automation** | Advanced notification workflows | 🔄 |
-| **Training Module** | Learn and recognize family faces | 🎓 |
+<table>
+<tr>
+<td width="50%">
+
+### 👁️ **Advanced Facial Recognition**
+- 🧠 **YOLOv8 + InsightFace**: Precise person detection & robust facial embedding
+- 🎯 **High Accuracy**: Configurable thresholds for optimal performance
+- 👥 **Family Profiles**: Multi-person recognition with group scenarios
+- 🔍 **Visitor Tracking**: ULID-based unknown visitor identification
+- 📸 **Dynamic Updates**: Easy addition of new family members
+
+</td>
+<td width="50%">
+
+### 🏡 **Intelligent Home Automation**
+- 💡 **Smart Lighting**: Sunset-aware illumination control via Home Assistant
+- ❄️ **Climate Control**: Automated AC/thermostat adjustments
+- 🎵 **Music Integration**: Jellyfin playlist automation based on presence
+- 🙏 **Devotional Scheduling**: Hindu calendar-based spiritual music automation
+- 🌅 **Astronomical Data**: Astral library for time-based automation
+- ⚙️ **Adaptive Rules**: Dynamic automation based on detection patterns
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 💬 **Personalized AI Greetings**
+- 🌤️ **Weather Integration**: Real-time OpenWeatherMap data inclusion
+- 🤖 **LangChain + CrewAI**: Natural language greeting generation
+- 👥 **Context Awareness**: Family history and preference incorporation
+- 🕐 **Temporal Messaging**: Time-appropriate personalized greetings
+- 📱 **Multi-Platform**: Smart displays and Telegram delivery
+
+</td>
+<td width="50%">
+
+### 📊 **Comprehensive Monitoring**
+- 📈 **Event Analytics**: Detailed detection and activity tracking
+- 📸 **Photo Archive**: Organized detection images by date/identity
+- 📝 **Audit Logging**: Complete system activity trail
+- 🔔 **Real-time Alerts**: Telegram notifications for security events
+- 📊 **Performance Metrics**: System health and efficiency monitoring
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🏗️ System Architecture
 
-<details>
-<summary>📊 <strong>Click to view detailed system architecture</strong></summary>
+### 🔧 **Technology Stack**
+
+<div align="center">
+
+**🐍 Python 3.9+** • **🚀 FastAPI** • **🐘 PostgreSQL** • **🔄 Celery** • **📦 Redis** • **🐳 Docker** • **🧠 YOLOv8** • **👤 InsightFace** • **🤖 LangChain** • **⚡ CrewAI**
+
+</div>
 
 ```mermaid
-classDiagram
-    class Camera {
-        +/dev/video0
-        +/dev/video2
-        +Capture Video Feed()
-    }
-
-    class NexpatrolAgent {
-        +process_video()
-        +create_labeled_image()
-        +log_detection()
-        +clean_old_images()
-    }
-
-    class YOLOv8 {
-        +Detect Persons()
-        +Return Bounding Boxes()
-    }
-
-    class InsightFace {
-        +Extract Face Embeddings()
-        +Detect Faces()
-    }
-
-    class VisitorTracker {
-        +init_unknown_visitors_db()
-        +check_previous_visitor()
-        +store_unknown_visitor()
-        +update_unknown_visitor()
-    }
-
-    class SurveillanceAgent {
-        +process_unknown()
-        +Send Webhook()
-    }
-
-    class FacesDB {
-        +Store Known Face Embeddings
-        +name, embedding, last_updated
-    }
-
-    class NexpatrolDB {
-        +Store Detections
-        +Store Known Persons
-        +detections: timestamp, device, status
-        +known_persons: name, embedding
-    }
-
-    class UnknownVisitorsDB {
-        +Store Unknown Visitors
-        +ulid, embedding, first_seen, last_seen
-    }
-
-    class N8nWorkflow {
-        +Process Webhooks
-        +AI Risk Assessment
-        +Format Telegram Message
-    }
-
-    class OllamaLLM {
-        +Analyze Image
-        +Calculate Risk Score
-    }
-
-    class Telegram {
-        +Send Notification()
-        +Display Image and Metadata()
-    }
-
-    Camera --> NexpatrolAgent : Provides Video Feed
-    NexpatrolAgent --> YOLOv8 : Person Detection
-    NexpatrolAgent --> InsightFace : Face Recognition
-    NexpatrolAgent --> VisitorTracker : Manage Visitors
-    NexpatrolAgent --> FacesDB : Query Known Faces
-    NexpatrolAgent --> NexpatrolDB : Log Detections
-    NexpatrolAgent --> UnknownVisitorsDB : Store Unknowns
-    NexpatrolAgent --> SurveillanceAgent : Trigger Webhook
-    SurveillanceAgent --> N8nWorkflow : Send Webhook
-    VisitorTracker --> UnknownVisitorsDB : Manage Data
-    N8nWorkflow --> OllamaLLM : Risk Analysis
-    N8nWorkflow --> Telegram : Send Alerts
-    FacesDB --> InsightFace : Provide Embeddings
-    NexpatrolDB --> NexpatrolAgent : Store Data
-    UnknownVisitorsDB --> VisitorTracker : Store Data
+graph TB
+    subgraph "🎥 Computer Vision Layer"
+        A[📹 Video Input] --> B[🎯 YOLOv8 Detection]
+        B --> C[👤 InsightFace Recognition]
+        C --> D[🧮 Embedding Processing]
+    end
+    
+    subgraph "🧠 AI Processing Layer"
+        E[🔗 LangChain] --> F[⚡ CrewAI Agents]
+        F --> G[🦙 Ollama Models]
+        G --> H[🌤️ Weather API]
+    end
+    
+    subgraph "⚡ Application Layer"
+        I[🚀 FastAPI Server] --> J[🔄 Celery Workers]
+        J --> K[📦 Redis Broker]
+        K --> L[📅 Celery Beat]
+    end
+    
+    subgraph "💾 Data Layer"
+        M[🐘 PostgreSQL] --> N[🔗 SQLAlchemy ORM]
+        N --> O[📊 JSONB Events]
+    end
+    
+    D --> I
+    H --> J
+    L --> E
+    O --> C
 ```
 
-</details>
+### 🐳 **Microservices Architecture**
 
-### 🔧 Core Components
-
-| Component | Purpose | Technology |
-|-----------|---------|------------|
-| 📷 **Camera** | Video capture from USB/IP cameras | OpenCV |
-| ⚙️ **NexpatrolAgent** | Core processing engine | Python |
-| 🤖 **YOLOv8 & InsightFace** | AI detection and recognition | Deep Learning |
-| 🕵️ **VisitorTracker** | Unknown visitor management | SQLite |
-| 🌐 **SurveillanceAgent** | Webhook trigger system | HTTP |
-| 💾 **Databases** | Data persistence layer | SQLite |
-| 📡 **N8nWorkflow** | Automation and notifications | n8n |
-| 🧠 **OllamaLLM** | Risk assessment AI | Ollama |
-| 📱 **Telegram** | Alert delivery system | Telegram Bot API |
+| Service | Technology | Purpose | Port | Status |
+|---------|------------|---------|------|--------|
+| **🚀 FastAPI** | Python 3.9+ + Uvicorn | REST API & Webhooks | 8000 | ![Status](https://img.shields.io/badge/Active-green) |
+| **👁️ Kinwatch Agent** | OpenCV + CUDA | Video Processing | - | ![Status](https://img.shields.io/badge/Active-green) |
+| **⚡ Celery Worker** | Python + Redis | Async Task Processing | - | ![Status](https://img.shields.io/badge/Active-green) |
+| **📅 Celery Beat** | Python + Redis | Scheduled Tasks | - | ![Status](https://img.shields.io/badge/Active-green) |
+| **🐘 PostgreSQL** | PostgreSQL 15 | Primary Database | 5432 | ![Status](https://img.shields.io/badge/Active-green) |
+| **📦 Redis** | Redis 7 | Message Broker & Cache | 6379 | ![Status](https://img.shields.io/badge/Active-green) |
 
 ---
 
-## 🔄 Processing Flow
+## 🎬 How It Works
 
-<details>
-<summary>📈 <strong>Click to view detailed processing pipeline</strong></summary>
+<div align="center">
 
 ```mermaid
-graph TD
-    A[📹 Capture Video Feed Camera] --> B[⚙️ Process Frame NexpatrolAgent]
-    B --> C{👤 Person Detected?}
-    C -->|❌ No| A
-    C -->|✅ Yes| D[😊 Extract Face Embedding InsightFace]
-    D --> E{🔍 Known Face?}
-    E -->|✅ Yes| F[📝 Log Known Person NexpatrolDB]
-    E -->|❌ No| G[🕵️ Check Unknown Visitor VisitorTracker]
-    G --> H{🔎 Previous Visitor?}
-    H -->|✅ Yes| I[🔄 Update Visitor Record UnknownVisitorsDB]
-    H -->|❌ No| J[🆕 Store New Visitor UnknownVisitorsDB]
-    I --> K{⏳ Alert Cooldown OK?}
-    J --> K
-    K -->|❌ No| A
-    K -->|✅ Yes| L[🌐 Send Webhook SurveillanceAgent]
-    L --> M[🧠 AI Risk Assessment OllamaLLM via N8n]
-    M --> N[📊 Format Alert Message N8nWorkflow]
-    N --> O[📱 Send Telegram Notification]
-    F --> P[🖥️ Display Labeled Video NexpatrolAgent]
-    K --> P
-    O --> P
+graph LR
+    A[📹 Camera Feed] --> B[🤖 AI Detection]
+    B --> C[👤 Face Recognition]
+    C --> D[💬 Greeting Generation]
+    C --> E[🏠 Home Automation]
+    C --> F[🙏 Devotional Music]
+    D --> G[📱 Smart Display]
+    E --> H[💡 Lights & Music]
+    F --> I[🎵 Daily Worship Playlists]
+    C --> J[📊 Event Logging]
+    J --> K[📈 Analytics Dashboard]
 ```
 
-</details>
+</div>
+
+### 🔄 **Processing Pipeline**
+
+1. **📹 Video Capture**: Continuous monitoring of configured camera feeds
+2. **🎯 Person Detection**: YOLOv8 identifies human subjects with configurable confidence
+3. **👤 Face Recognition**: InsightFace generates 512-dimensional embeddings
+4. **🔍 Identity Resolution**: Cosine similarity matching against stored profiles
+5. **💬 Greeting Generation**: AI-powered personalized messages with weather context
+6. **🏠 Automation Triggers**: Smart device control via Home Assistant webhooks
+7. **🙏 Devotional Scheduling**: Hindu calendar-based spiritual music automation
+8. **📊 Event Logging**: Comprehensive activity tracking and analytics
 
 ---
 
-## 📡 n8n Workflow Automation
+## 🎵 Enhanced Music Automation System
 
-The **n8n workflow** (`PATROL.json`) is the brain of KinAi-Nexpatrol's notification system:
+### 🙏 **Devotional Music Schedule**
 
-### 🎯 Key Functions
-- 🌐 **Webhook Processing**: Receives alerts from each camera endpoint
-- 🚦 **Smart Routing**: Separates new vs known visitor alerts
-- 🧠 **Risk Analysis**: AI-powered threat assessment via Ollama
-- 📝 **Message Formatting**: Creates rich MarkdownV2 alerts
-- 📱 **Telegram Delivery**: Sends notifications with images
+KinAI Vision includes an intelligent **Hindu devotional music system** that automatically plays appropriate spiritual content based on:
+- **Daily Deity Worship Calendar** (Monday-Sunday cycle)
+- **Hindu Festival Calendar** (2025 South Indian festivals)
+- **Family Presence Detection** (only triggers when someone is home)
+- **Time-of-Day Awareness** (morning prayers, evening aarti, etc.)
 
-### 🚀 Quick Setup
-```bash
-# Start services
-docker-compose -f docker-compose.yml up -d
+---
 
-# Access n8n dashboard
-open http://localhost:5678
+### 🗓️ **Weekly Deity Worship Schedule**
 
-# Import workflow
-# Upload PATROL.json via n8n interface
+<table>
+<tr>
+<th>Day</th>
+<th>Deity Worshipped (English)</th>
+<th>தேவதை (Tamil)</th>
+<th>🎵 Playlist Theme Suggestion</th>
+<th>⏰ Default Time</th>
+</tr>
+<tr>
+<td><strong>Monday</strong></td>
+<td>Lord Shiva</td>
+<td>சிவபெருமான்</td>
+<td>Shiva Bhajans (Om Namah Shivaya, Lingashtakam)</td>
+<td>6:00 AM, 7:00 PM</td>
+</tr>
+<tr>
+<td><strong>Tuesday</strong></td>
+<td>Lord Murugan / Hanuman</td>
+<td>முருகன் / ஹனுமான்</td>
+<td>Murugan Padalgal, Hanuman Chalisa</td>
+<td>6:00 AM, 7:00 PM</td>
+</tr>
+<tr>
+<td><strong>Wednesday</strong></td>
+<td>Lord Venkateswara / Krishna</td>
+<td>வெங்கடேஸ்வரர் / கிருஷ்ணர்</td>
+<td>Vishnu Sahasranamam, Krishna Bhajans</td>
+<td>6:00 AM, 7:00 PM</td>
+</tr>
+<tr>
+<td><strong>Thursday</strong></td>
+<td>Guru (Brihaspati) / Dattatreya</td>
+<td>குரு பகவான் / தத்தாத்திரேயர்</td>
+<td>Guru Stotram, Dattatreya Bhajans</td>
+<td>6:00 AM, 7:00 PM</td>
+</tr>
+<tr>
+<td><strong>Friday</strong></td>
+<td>Goddess Lakshmi / Durga</td>
+<td>மகாலட்சுமி / துர்கை</td>
+<td>Lakshmi Aarti, Kanakadhara Stotram, Devi Bhajans</td>
+<td>6:00 AM, 7:00 PM</td>
+</tr>
+<tr>
+<td><strong>Saturday</strong></td>
+<td>Lord Shani / Narasimha</td>
+<td>சனீஸ்வரர் / நரசிம்மர்</td>
+<td>Shani Dev Songs, Narasimha Kavacham</td>
+<td>6:00 AM, 7:00 PM</td>
+</tr>
+<tr>
+<td><strong>Sunday</strong></td>
+<td>Lord Surya (Sun God)</td>
+<td>சூரிய பகவான்</td>
+<td>Aditya Hridayam, Surya Gayatri Mantra</td>
+<td>6:00 AM, 7:00 PM</td>
+</tr>
+</table>
 
-# Configure Telegram bot
-# Update chatId and telegramApi token in workflow
+---
+
+### 🗓️ **South Indian Hindu Festivals (January – March 2025)**
+
+<table>
+<tr>
+<th>📅 Date</th>
+<th>Festival (English)</th>
+<th>பண்டிகை (Tamil)</th>
+<th>🎵 Playlist Theme Suggestion</th>
+<th>🔔 Auto-Trigger</th>
+</tr>
+<tr>
+<td><strong>January 10</strong></td>
+<td>Vaikuntha Ekadashi</td>
+<td>வைகுண்ட ஏகாதசி</td>
+<td>Vishnu Sahasranamam, Govinda Namavali</td>
+<td>5:30 AM - 8:00 AM</td>
+</tr>
+<tr>
+<td><strong>January 13</strong></td>
+<td>Bhogi</td>
+<td>போகிப் பண்டிகை</td>
+<td>Traditional Bhogi songs</td>
+<td>All Day (when home)</td>
+</tr>
+<tr>
+<td><strong>January 14</strong></td>
+<td>Thai Pongal</td>
+<td>தைப்பொங்கல்</td>
+<td>Pongal celebration songs</td>
+<td>All Day (when home)</td>
+</tr>
+<tr>
+<td><strong>January 15</strong></td>
+<td>Maattu Pongal</td>
+<td>மாட்டுப் பொங்கல்</td>
+<td>Folk songs honoring cattle</td>
+<td>6:00 AM - 10:00 AM</td>
+</tr>
+<tr>
+<td><strong>January 15</strong></td>
+<td>Thiruvalluvar Day</td>
+<td>திருவள்ளுவர் தினம்</td>
+<td>Songs on Thirukkural and Thiruvalluvar</td>
+<td>Morning Hours</td>
+</tr>
+<tr>
+<td><strong>January 16</strong></td>
+<td>Kaanum Pongal</td>
+<td>காணும் பொங்கல்</td>
+<td>Family and reunion songs</td>
+<td>All Day (when home)</td>
+</tr>
+<tr>
+<td><strong>January 16</strong></td>
+<td>Uzhavar Thirunal</td>
+<td>உழவர் திருநாள்</td>
+<td>Songs celebrating farmers</td>
+<td>Morning Hours</td>
+</tr>
+<tr>
+<td><strong>January 29</strong></td>
+<td>Thai Amavasai</td>
+<td>தை அமாவாசை</td>
+<td>Amavasya prayers and meditative chants</td>
+<td>5:00 AM - 7:00 AM</td>
+</tr>
+<tr>
+<td><strong>February 4</strong></td>
+<td>Ratha Saptami</td>
+<td>ரத சப்தமி</td>
+<td>Surya Namaskar chants</td>
+<td>Sunrise (6:30 AM)</td>
+</tr>
+<tr>
+<td><strong>February 11</strong></td>
+<td>Thai Poosam</td>
+<td>தைப்பூசம்</td>
+<td>Murugan devotional songs</td>
+<td>4:00 AM - 8:00 AM</td>
+</tr>
+<tr>
+<td><strong>February 26</strong></td>
+<td>Maha Shivaratri</td>
+<td>மஹா சிவராத்திரி</td>
+<td>Shiva bhajans and Rudram chants</td>
+<td>All Night (6:00 PM - 6:00 AM)</td>
+</tr>
+<tr>
+<td><strong>March 12</strong></td>
+<td>Masi Magam</td>
+<td>மாசி மகம்</td>
+<td>Temple procession songs</td>
+<td>5:00 AM - 9:00 AM</td>
+</tr>
+<tr>
+<td><strong>March 13</strong></td>
+<td>Holi</td>
+<td>ஹோலி</td>
+<td>Holi festival songs</td>
+<td>All Day (when home)</td>
+</tr>
+<tr>
+<td><strong>March 14</strong></td>
+<td>Karadaiyan Nombu</td>
+<td>காரடையான் நோன்பு</td>
+<td>Devotional songs for Savitri</td>
+<td>4:30 AM - 7:00 AM</td>
+</tr>
+<tr>
+<td><strong>March 30</strong></td>
+<td>Ugadi (Telugu New Year)</td>
+<td>உகாதி</td>
+<td>Telugu New Year songs</td>
+<td>Morning Hours</td>
+</tr>
+</table>
+
+---
+
+### 🎵 **Smart Devotional Music Logic**
+
+#### 🏠 **Presence-Based Activation**
+```python
+async def trigger_devotional_music(detected_persons: List[str], current_time: datetime):
+    """
+    Intelligent devotional music activation based on:
+    - Someone being home (face detection required)
+    - Current day of week (deity-specific)
+    - Special festival dates
+    - Time of day (morning/evening prayers)
+    """
+    
+    if not detected_persons:
+        return  # No music if no one is home
+    
+    day_of_week = current_time.strftime('%A').lower()
+    current_date = current_time.date()
+    current_hour = current_time.hour
+    
+    # Check if it's a festival date
+    festival_playlist = get_festival_playlist(current_date)
+    if festival_playlist:
+        await play_festival_music(festival_playlist, detected_persons)
+        return
+    
+    # Regular daily deity worship
+    deity_playlist = get_daily_deity_playlist(day_of_week, current_hour)
+    
+    # Personalize based on family member preferences
+    if "Ila" in detected_persons:
+        deity_playlist = customize_for_family_member(deity_playlist, "Ila")
+    
+    await play_devotional_music(deity_playlist, volume=0.3)
+
+def get_daily_deity_playlist(day: str, hour: int) -> str:
+    """Returns appropriate playlist based on day and time"""
+    deity_map = {
+        'monday': 'shiva_bhajans',
+        'tuesday': 'murugan_hanuman_songs', 
+        'wednesday': 'vishnu_krishna_bhajans',
+        'thursday': 'guru_dattatreya_stotrams',
+        'friday': 'lakshmi_devi_bhajans',
+        'saturday': 'shani_narasimha_songs',
+        'sunday': 'surya_mantras'
+    }
+    
+    base_playlist = deity_map.get(day, 'general_devotional')
+    
+    # Morning prayers (5:30 AM - 8:00 AM)
+    if 5 <= hour <= 8:
+        return f"{base_playlist}_morning"
+    # Evening aarti (6:00 PM - 8:00 PM)  
+    elif 18 <= hour <= 20:
+        return f"{base_playlist}_evening"
+    else:
+        return base_playlist
+
+def get_festival_playlist(date: datetime.date) -> Optional[str]:
+    """Returns special festival playlist if date matches"""
+    festival_calendar = {
+        datetime.date(2025, 1, 10): "vaikuntha_ekadashi",
+        datetime.date(2025, 1, 14): "thai_pongal_celebrations",
+        datetime.date(2025, 2, 11): "thai_poosam_murugan",
+        datetime.date(2025, 2, 26): "maha_shivaratri_night",
+        datetime.date(2025, 3, 13): "holi_celebrations",
+        # Add more festivals...
+    }
+    
+    return festival_calendar.get(date)
+```
+
+#### 📊 **Enhanced Database Schema for Devotional Music**
+
+```sql
+-- Devotional music scheduling table
+CREATE TABLE devotional_schedule (
+    id SERIAL PRIMARY KEY,
+    day_of_week INTEGER,              -- 0=Monday, 6=Sunday
+    deity_name VARCHAR(100),          -- Tamil and English deity names
+    playlist_id VARCHAR(100),         -- Jellyfin playlist identifier
+    start_time TIME,                  -- Morning prayer time
+    end_time TIME,                    -- Evening prayer time
+    is_active BOOLEAN DEFAULT TRUE,
+    volume_level FLOAT DEFAULT 0.3,   -- Default volume for devotional music
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Festival-specific music calendar
+CREATE TABLE festival_calendar (
+    id SERIAL PRIMARY KEY,
+    festival_date DATE,               -- Specific festival date
+    festival_name_en VARCHAR(200),    -- English festival name
+    festival_name_ta VARCHAR(200),    -- Tamil festival name  
+    playlist_id VARCHAR(100),         -- Special festival playlist
+    start_time TIME,                  -- Festival music start time
+    end_time TIME,                    -- Festival music end time
+    auto_trigger BOOLEAN DEFAULT TRUE, -- Whether to auto-play
+    all_day BOOLEAN DEFAULT FALSE,    -- All-day festival music
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Family devotional preferences
+CREATE TABLE devotional_preferences (
+    id SERIAL PRIMARY KEY,
+    person_name VARCHAR(100),         -- Family member name
+    preferred_deity VARCHAR(100),     -- Favorite deity
+    preferred_playlist VARCHAR(100),  -- Personal devotional playlist
+    morning_volume FLOAT DEFAULT 0.2, -- Preferred morning volume
+    evening_volume FLOAT DEFAULT 0.4, -- Preferred evening volume
+    enable_auto_play BOOLEAN DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+#### 🔔 **Smart Notification Integration**
+
+```python
+async def send_devotional_notification(event_type: str, details: dict):
+    """Send devotional music notifications"""
+    
+    notifications = {
+        "daily_deity": f"🙏 {details['deity_name']} devotional music started - {details['playlist_name']}",
+        "festival_music": f"🎉 {details['festival_name']} celebration music playing automatically",
+        "morning_prayer": f"🌅 Morning prayer time - {details['deity_name']} bhajans started",
+        "evening_aarti": f"🪔 Evening aarti time - {details['deity_name']} songs playing",
+        "shivaratri_night": f"🌙 Maha Shivaratri - All-night Shiva bhajans activated"
+    }
+    
+    message = notifications.get(event_type, f"🎵 Devotional music update: {details}")
+    
+    # Send to family members via Telegram
+    await send_telegram_message({
+        "chat_id": FAMILY_CHAT_ID,
+        "text": message,
+        "parse_mode": "HTML"
+    })
 ```
 
 ---
 
-## 🎓 Training Module
+## 🚀 Quick Start Guide
 
-### 🎯 Purpose
-Train KinAi-Nexpatrol to recognize your family members and trusted individuals, dramatically reducing false alerts.
+### 📋 **Prerequisites**
 
-### 📋 Features
-- 😊 **Personalization**: Distinguish family from strangers
-- 🎯 **Accuracy**: Custom training on your footage
-- 🔒 **Privacy**: All processing stays local
+<table>
+<tr>
+<td width="50%">
 
-### 🚀 Usage
+#### 🖥️ **System Requirements**
+- 🐳 Docker & Docker Compose
+- 🎮 NVIDIA GPU (CUDA 11.8+)
+- 💾 10GB+ disk space
+- 🌐 Internet connection
+- 🎥 USB/IP camera
+
+</td>
+<td width="50%">
+
+#### 🔑 **API Keys Needed**
+- 🌤️ OpenWeatherMap API key
+- 🏠 Home Assistant access (optional)
+- 📱 Telegram Bot token (optional)
+- 🎵 Jellyfin server (optional)
+
+</td>
+</tr>
+</table>
+
+### 🛠️ **Installation Steps**
+
+#### 1️⃣ **Clone Repository**
 ```bash
-# 1. Prepare training videos
-mkdir footage/
-cp your_family_videos.mp4 footage/
-
-# 2. Run training
-docker exec -it nexpatrol_agent python3 /app/src/train_faces.py
-
-# 3. Verify results
-# Check faces.db for new entries
+git clone https://github.com/yourusername/KinAI-Vision.git
+cd KinAI-Vision
 ```
 
----
-
-## ⚠️ Risk Assessment System
-
-KinAi-Nexpatrol uses **anti-financial crime principles** for intelligent threat detection:
-
-### 📊 Risk Scoring Matrix
-
-| 🚨 Risk Factor | 🆕 New Visitor | 👤 Known Visitor | Description |
-|---------------|---------------|-----------------|-------------|
-| 😷 **Face Mask** | +3 | +1 | Surgical/cloth mask obscuring face |
-| 🧥 **Full Hoodie** | +4 | +2 | Hood up, face partially hidden |
-| 🔪 **Weapon/Suspicious Object** | +5 | +3 | Visible weapon or concerning item |
-| 🌙 **Nighttime (10PM-5AM)** | +2 | +1 | Activity during late hours |
-| 🚫 **Restricted Area** | +2 | +1 | Presence in designated zones |
-
-### 🚦 Alert Levels
-
-| Level | Score Range | Action | Icon |
-|-------|------------|--------|------|
-| **Low** | 0-2 | Monitor only | ✅ |
-| **Medium** | 3-4 | Standard alert | ⚠️ |
-| **High** | 5-6 | Priority notification | 🚨 |
-| **Very High** | 7-8 | Urgent alert | 🔴 |
-| **Extreme** | 9+ | Emergency notification | 🆘 |
-
----
-
-## 🛠️ Installation Guide
-
-### 📋 Prerequisites
-
-| Requirement | Specification | Purpose |
-|------------|---------------|---------|
-| 🖥️ **Hardware** | NVIDIA GPU (RTX 3060+) | AI model acceleration |
-| 🐳 **Software** | Docker + Docker Compose | Containerization |
-| 🔧 **Drivers** | NVIDIA CUDA drivers | GPU support |
-| 📷 **Cameras** | USB/IP cameras | Video input |
-| 🤖 **Models** | YOLOv8, InsightFace buffalo_l | AI processing |
-| 📱 **Telegram** | Bot token + Chat ID | Notifications |
-
-### 🚀 Quick Start
-
+#### 2️⃣ **Environment Configuration**
 ```bash
-# 1️⃣ Clone repository
-git clone https://github.com/yourusername/kinai-nexpatrol.git
-cd kinai-nexpatrol
+# Create environment file
+touch .env
+```
 
-# 2️⃣ Configure settings
+```env
+# Database Configuration
+DATABASE_URL=postgresql://user:password@172.17.0.1:5432/kinai
+SQLALCHEMY_POOL_SIZE=20
+SQLALCHEMY_MAX_OVERFLOW=30
+
+# Celery Configuration
+CELERY_BROKER_URL=redis://172.17.0.1:6379/0
+CELERY_RESULT_BACKEND=redis://172.17.0.1:6379/0
+CELERY_TASK_SERIALIZER=json
+
+# AI Model Configuration
+OLLAMA_BASE_URL=http://host.docker.internal:11434
+OLLAMA_MODEL=granite3.2:latest
+OPENWEATHERMAP_API_KEY=your_openweathermap_api_key
+
+# Webhook Configuration
+WEBHOOK_URL=http://your_webhook_endpoint
+
+# CUDA Configuration
+CUDA_VISIBLE_DEVICES=0
+TORCH_CUDA_ARCH_LIST="7.5;8.0;8.6"
+```
+
+#### 3️⃣ **Model Setup**
+```bash
+# Download YOLOv8 model
+mkdir -p models
+wget -O models/yolov8n.pt https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt
+
+# Setup InsightFace (buffalo_l directory should exist in models/)
+mkdir -p models/buffalo_l
+```
+
+#### 4️⃣ **Configuration File**
+```bash
+# Edit configs/config.ini
 nano configs/config.ini
-
-# 3️⃣ Setup AI models
-# Place yolov8n.pt and buffalo_l in models/
-
-# 4️⃣ Build and run
-docker-compose -f docker-compose.yml up -d
-
-# 5️⃣ Configure Telegram in n8n workflow
-# Update PATROL.json with your bot credentials
-
-# 6️⃣ Optional: Train on family faces
-docker exec -it nexpatrol_agent python3 /app/src/train_faces.py
 ```
-
-### ⚙️ Configuration Example
-
-<details>
-<summary>📝 <strong>Click to view config.ini template</strong></summary>
 
 ```ini
 [Paths]
-BASE_DIR=/app
-DETECTED_DIR=/app/detected_faces
-FACES_DB_PATH=/app/data/faces.db
-NEXPATROL_DB_PATH=/app/data/nexpatrol.db
-MODEL_PATH=/app/models/yolov8n.pt
-
-[Cameras]
-CAMERA_0=/dev/video0
-CAMERA_1=/dev/video2
+FOOTAGE_DIR = /app/footage
+MODELS_DIR = /app/models
+DETECTED_FACES_DIR = /app/detected_faces
 
 [Settings]
-COOLDOWN_PERIOD=300
-VERIFICATION_WINDOW=60
-MIN_DETECTIONS=3
-THRESHOLD=0.6
-SAVE_COOLDOWN=60
-MIN_CONFIDENCE=0.5
+THRESHOLD = 0.6                    # Facial recognition threshold
+MIN_CONFIDENCE = 0.5               # YOLOv8 detection confidence
+COOLDOWN_PERIOD = 30               # Seconds between identical detections
+DETECTION_SIZE = 320               # Input size for face detection
+
+[Cameras]
+CAMERA_0 = /dev/video4             # USB Camera device
+CAMERA_1 = rtsp://192.168.1.100    # IP Camera stream
+
+[Webhooks]
+SINGLE_KNOWN = http://fastapi:8000/webhook/single_known
+FAMILY_PROFILE = http://fastapi:8000/webhook/family_profile
+UNKNOWN_WITH_KNOWN = http://fastapi:8000/webhook/unknown_with_known
+TRACK_SUSPECT = http://fastapi:8000/webhook/track_suspect
+NO_DETECTION = http://fastapi:8000/webhook/no_detection
+
+[Logging]
+LOG_DIR = /app/logs
+LOG_LEVEL = DEBUG
+
+[ModelSettings]
+YOLO_CONFIDENCE = 0.5              # Person detection threshold
+YOLO_IOU = 0.45                    # Non-maximum suppression IOU
+FACE_CONFIDENCE = 0.6              # Face detection threshold
+
+[DevotionalMusic]
+ENABLE_DEVOTIONAL = true           # Enable devotional music automation
+MORNING_START_TIME = 06:00         # Daily morning prayer time
+EVENING_START_TIME = 19:00         # Daily evening prayer time
+DEFAULT_VOLUME = 0.3               # Default devotional music volume
+FESTIVAL_VOLUME = 0.5              # Special festival music volume
+AUTO_STOP_EMPTY_HOME = true        # Stop music when no one is home
 ```
 
-</details>
-
----
-
-## 📖 Usage Guide
-
-### 🎮 Daily Operations
-
-| Action | Method | Result |
-|--------|--------|--------|
-| 📺 **Monitor Live Feed** | X11 forwarding/local display | Real-time labeled video |
-| 📱 **Receive Alerts** | Telegram app | Risk-assessed notifications |
-| 📜 **Review History** | Check logs/databases | Audit trail of all events |
-| ⚙️ **Adjust Settings** | Edit config.ini | Fine-tune sensitivity |
-
-### 📊 Monitoring & Logs
-
+#### 5️⃣ **Launch System**
 ```bash
-# View live logs
-docker logs -f nexpatrol_agent
+# Build and start all services
+docker-compose up --build -d
 
-# Check detection database
-sqlite3 /app/data/nexpatrol.db "SELECT * FROM detections LIMIT 10;"
-
-# Review visitor database  
-sqlite3 /app/data/unknown_visitors.db "SELECT * FROM visitors;"
+# Verify containers are running
+docker ps
 ```
 
----
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how to get involved:
-
-### 🔄 Development Workflow
-
+#### 6️⃣ **Initialize Database**
 ```bash
-# 1️⃣ Fork the repository
-gh repo fork yourusername/kinai-nexpatrol
-
-# 2️⃣ Create feature branch
-git checkout -b feature/amazing-new-feature
-
-# 3️⃣ Make your changes
-# ... code awesome features ...
-
-# 4️⃣ Commit with clear message
-git commit -m "✨ Add amazing new feature"
-
-# 5️⃣ Push and create PR
-git push origin feature/amazing-new-feature
-gh pr create
+# Database initialization (runs automatically)
+docker exec -it kinai-vision_postgres psql -U user -d kinai -c "\dt"
 ```
 
-### 📋 Contribution Areas
-- 🐛 **Bug Fixes**: Help us squash issues
-- ✨ **New Features**: Add exciting capabilities  
-- 📚 **Documentation**: Improve guides and examples
-- 🧪 **Testing**: Expand test coverage
-- 🎨 **UI/UX**: Enhance user experience
+#### 7️⃣ **Train Face Recognition**
+```bash
+# Add training footage to footage/ directory
+cp /path/to/family/videos/*.mp4 footage/
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+# Train facial embeddings
+docker-compose exec kinwatch python3 /app/src/train_faces.py
+```
+
+#### 8️⃣ **Setup Devotional Playlists**
+```bash
+# Configure Jellyfin devotional playlists
+curl -X POST http://localhost:8000/devotional/setup \
+  -H "Content-Type: application/json" \
+  -d '{
+    "jellyfin_server": "http://192.168.1.100:8096",
+    "api_key": "your_jellyfin_api_key",
+    "playlists": {
+      "shiva_bhajans_morning": "playlist_id_1",
+      "murugan_padalgal_evening": "playlist_id_2",
+      "thai_pongal_celebrations": "playlist_id_3"
+    }
+  }'
+```
+
+#### 9️⃣ **Verify System**
+```bash
+# Check API health
+curl http://localhost:8000/health
+
+# Monitor system logs
+docker-compose logs --tail=50 kinwatch
+
+# View detected faces
+ls detected_faces/camera_0/$(date +%Y%m%d)/
+
+# Test devotional music
+curl -X POST http://localhost:8000/devotional/test \
+  -H "Content-Type: application/json" \
+  -d '{"person_name": "Ila", "test_deity": "Murugan"}'
+```
 
 ---
 
-## 📜 License
+## 🗂️ Project Structure
 
-This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for full details.
+```
+KinAI-Vision/
+├── 📁 src/                          # 🧠 Core Application Code
+│   ├── 🚀 main.py                   # FastAPI application entry point
+│   ├── 🔄 celery_config.py          # Celery worker configuration
+│   ├── ⚡ tasks.py                  # Asynchronous task definitions
+│   ├── 🗄️ models.py                # SQLAlchemy ORM data models
+│   ├── 👁️ kinwatch_agent.py        # Video processing surveillance service
+│   ├── 📡 surveillance_agent.py     # Webhook trigger service
+│   ├── 🔗 chains.py                 # LangChain implementation
+│   ├── 🤖 agents.py                 # CrewAI agent definitions
+│   ├── 👥 family_profiles.py        # Family group detection logic
+│   ├── 🕵️ visitor_tracker.py        # Unknown visitor handling
+│   └── 🎓 train_faces.py            # Facial embedding training script
+├── 📁 configs/                      # ⚙️ Configuration Files
+│   └── ⚙️ config.ini               # Main application configuration
+├── 📁 models/                       # 🧠 AI Model Files
+│   ├── 🎯 yolov8n.pt               # YOLOv8 person detection model
+│   └── 📁 buffalo_l/               # InsightFace model directory
+├── 📁 footage/                      # 🎬 Training Video Data
+├── 📁 detected_faces/               # 📸 Detection Image Archive
+│   └── 📁 camera_X/YYYYMMDD/       # Organized by camera/date
+├── 📁 logs/                         # 📝 Application Log Files
+├── 📁 docker/                       # 🐳 Docker Configuration
+│   └── 📋 requirements.txt         # Surveillance service dependencies
+├── 🐳 Dockerfile                    # Container image definition
+├── 🐙 docker-compose.yml           # Multi-service orchestration
+├── 🗄️ init_db.sql                  # PostgreSQL database initialization
+├── 🌍 .env                         # Environment variables
+├── 📋 requirements.txt              # Main Python dependencies
+└── 📖 README.md                    # This comprehensive documentation
+```
 
 ---
 
-## 🙌 Acknowledgments
+## 🧠 AI/ML Components Deep Dive
 
-### 🛠️ Powered By
-- **[YOLOv8](https://github.com/ultralytics/ultralytics)** - Object detection
-- **[InsightFace](https://github.com/deepinsight/insightface)** - Face recognition  
-- **[Ollama](https://ollama.ai/)** - Local LLM inference
-- **[n8n](https://n8n.io/)** - Workflow automation
-
-### 💡 Inspiration
-- Anti-financial crime risk assessment principles
-- Privacy-first surveillance architecture
-- Community-driven open source development
-
----
-
-## 📞 Support & Contact
+### 🎯 **Computer Vision Pipeline**
 
 <div align="center">
 
-### 🔗 Get Help & Connect
-
-[![GitHub Issues](https://img.shields.io/badge/GitHub-Issues-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername/kinai-nexpatrol/issues)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
-[![Discord](https://img.shields.io/badge/Discord-Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/yourcommunity)
-
-**🛡️ Secure your home with KinAi-Nexpatrol!**
-
-*For technical issues, feature requests, or collaboration opportunities, don't hesitate to reach out.*
+```mermaid
+graph TD
+    A[📹 Video Frame] --> B[🔄 Preprocessing]
+    B --> C[🎯 YOLOv8 Detection]
+    C --> D{👤 Person Found?}
+    D -->|No| E[📝 Log No Detection]
+    D -->|Yes| F[✂️ Face Extraction]
+    F --> G[👤 InsightFace Processing]
+    G --> H[🧮 512-D Embedding]
+    H --> I[📊 Similarity Matching]
+    I --> J{🔍 Match Found?}
+    J -->|Yes| K[✅ Known Person]
+    J -->|No| L[❓ Unknown Visitor]
+    K --> M[📡 Webhook Trigger]
+    L --> N[🆔 ULID Assignment]
+    N --> M
+```
 
 </div>
+
+#### 🔧 **YOLOv8 Configuration**
+```python
+# Person detection with optimized parameters
+model = YOLO('yolov8n.pt')
+results = model(
+    frame, 
+    conf=0.5,           # Confidence threshold
+    classes=[0],        # Person class only
+    device='cuda:0'     # GPU acceleration
+)
+```
+
+#### 👤 **InsightFace Integration**
+```python
+# High-accuracy facial recognition
+app = FaceAnalysis(
+    name='buffalo_l',
+    providers=['CUDAExecutionProvider', 'CPUExecutionProvider']
+)
+faces = app.get(cv2_image)
+embedding = faces[0].embedding  # 512-dimensional feature vector
+```
+
+### 🤖 **Natural Language Processing**
+
+#### 🔗 **LangChain + CrewAI Workflow**
+```python
+# Intelligent greeting generation
+weather_agent = Agent(
+    role='Weather Specialist',
+    goal='Provide contextual weather information',
+    llm=Ollama(model="granite3.2:latest"),
+    backstory="Expert in weather data interpretation"
+)
+
+greeting_task = Task(
+    description="Generate personalized greeting with weather context",
+    agent=weather_agent,
+    expected_output="Warm, personalized welcome message"
+)
+
+crew = Crew(agents=[weather_agent], tasks=[greeting_task])
+result = crew.kickoff()
+```
 
 ---
 
+## 💾 Database Architecture
+
+### 🗄️ **PostgreSQL Schema Design**
+
 <div align="center">
 
-### ⭐ Star this repo if KinAi-Nexpatrol helps secure your home!
-
-**Made with ❤️ for the privacy-conscious security community**
+```mermaid
+erDiagram
+    EVENT_LOG {
+        int id PK
+        varchar event_type
+        jsonb payload
+        timestamp created_at
+    }
+    
+    FACES {
+        int id PK
+        varchar person_name
+        bytea embedding
+        timestamp created_at
+    }
+    
+    UNKNOWN_VISITORS {
+        int id PK
+        varchar visitor_ulid UK
+        bytea embedding
+        timestamp first_seen
+        timestamp last_seen
+        int detection_count
+    }
+    
+    FAMILY_PROFILES {
+        int id PK
+        varchar profile_name
+        jsonb member_names
+        timestamp created_at
+    }
+    
+    MUSIC_SCHEDULE {
+        int id PK
+        varchar playlist_id
+        time start_time
+        time end_time
+        varchar required_person
+    }
+    
+    EVENT_LOG ||--o{ FACES : references
+    UNKNOWN_VISITORS ||--o{ EVENT_LOG : tracks
+    FAMILY_PROFILES ||--o{ EVENT_LOG : groups
+```
 
 </div>
+
+#### 📊 **Core Tables**
+
+<table>
+<tr>
+<td width="50%">
+
+**📝 Event Logging**
+```sql
+CREATE TABLE event_log (
+    id SERIAL PRIMARY KEY,
+    event_type VARCHAR(50) NOT NULL,
+    payload JSONB,
+    camera_id INTEGER,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    processed BOOLEAN DEFAULT FALSE
+);
+
+-- Indexes for performance
+CREATE INDEX idx_event_log_timestamp ON event_log(timestamp);
+CREATE INDEX idx_event_log_type ON event_log(event_type);
+CREATE INDEX idx_event_log_payload ON event_log USING GIN(payload);
+```
+
+</td>
+<td width="50%">
+
+**👤 Facial Recognition**
+```sql
+CREATE TABLE faces (
+    id SERIAL PRIMARY KEY,
+    person_name VARCHAR(100) NOT NULL,
+    embedding BYTEA NOT NULL,
+    confidence FLOAT DEFAULT 1.0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Efficient similarity search preparation
+CREATE INDEX idx_faces_person ON faces(person_name);
+CREATE INDEX idx_faces_created ON faces(created_at);
+```
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+**🕵️ Visitor Tracking**
+```sql
+CREATE TABLE unknown_visitors (
+    id SERIAL PRIMARY KEY,
+    visitor_ulid VARCHAR(26) UNIQUE NOT NULL,
+    embedding BYTEA NOT NULL,
+    first_seen TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    last_seen TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    detection_count INTEGER DEFAULT 1,
+    is_flagged BOOLEAN DEFAULT FALSE
+);
+```
+
+</td>
+<td width="50%">
+
+**🎵 Music Automation**
+```sql
+CREATE TABLE music_schedule (
+    id SERIAL PRIMARY KEY,
+    playlist_id VARCHAR(100) NOT NULL,
+    start_time TIME NOT NULL,
+    end_time TIME NOT NULL,
+    required_person VARCHAR(100),
+    is_active BOOLEAN DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🔗 API Documentation
+
+### 🚀 **FastAPI Endpoints**
+
+#### 📡 **Webhook Endpoints**
+
+<table>
+<tr>
+<th>Endpoint</th>
+<th>Method</th>
+<th>Description</th>
+<th>Payload</th>
+</tr>
+<tr>
+<td><code>/webhook/single_known</code></td>
+<td>🟢 POST</td>
+<td>Single known person detected</td>
+<td><code>SingleKnownRequest</code></td>
+</tr>
+<tr>
+<td><code>/webhook/family_profile</code></td>
+<td>🟢 POST</td>
+<td>Family group detection</td>
+<td><code>FamilyProfileRequest</code></td>
+</tr>
+<tr>
+<td><code>/webhook/unknown_with_known</code></td>
+<td>🟢 POST</td>
+<td>Unknown person with known family</td>
+<td><code>MixedDetectionRequest</code></td>
+</tr>
+<tr>
+<td><code>/webhook/track_suspect</code></td>
+<td>🟢 POST</td>
+<td>New unknown visitor tracking</td>
+<td><code>SuspectRequest</code></td>
+</tr>
+<tr>
+<td><code>/webhook/no_detection</code></td>
+<td>🟢 POST</td>
+<td>No persons detected event</td>
+<td><code>NoDetectionRequest</code></td>
+</tr>
+</table>
+
+#### 🛠️ **Management Endpoints**
+
+<table>
+<tr>
+<th>Endpoint</th>
+<th>Method</th>
+<th>Description</th>
+<th>Response</th>
+</tr>
+<tr>
+<td><code>/health</code></td>
+<td>🔵 GET</td>
+<td>Basic system health check</td>
+<td><code>{"status": "healthy"}</code></td>
+</tr>
+<tr>
+<td><code>/health/detailed</code></td>
+<td>🔵 GET</td>
+<td>Detailed component status</td>
+<td>Component-wise health report</td>
+</tr>
+<tr>
+<td><code>/metrics</code></td>
+<td>🔵 GET</td>
+<td>Prometheus metrics endpoint</td>
+<td>Performance metrics</td>
+</tr>
+<tr>
+<td><code>/faces/train</code></td>
+<td>🟢 POST</td>
+<td>Trigger face model training</td>
+<td>Training status</td>
+</tr>
+<tr>
+<td><code>/config/reload</code></td>
+<td>🟢 POST</td>
+<td>Reload system configuration</td>
+<td>Reload confirmation</td>
+</tr>
+</table>
+
+#### 📋 **Request/Response Schemas**
+
+```python
+# Base detection event model
+class DetectionEvent(BaseModel):
+    camera_id: int
+    timestamp: datetime
+    confidence: float
+    bounding_box: List[float]
+    face_image: str  # Base64 encoded image
+    
+# Known person detection
+class KnownPersonEvent(DetectionEvent):
+    person_name: str
+    recognition_confidence: float
+    greeting_message: Optional[str]
+    
+# Unknown visitor detection
+class UnknownVisitorEvent(DetectionEvent):
+    visitor_ulid: str
+    is_recurring: bool = False
+    threat_level: str = "low"
+    
+# Family profile detection
+class FamilyProfileEvent(DetectionEvent):
+    profile_name: str
+    detected_members: List[str]
+    group_confidence: float
+```
+
+---
+
+## 📱 Smart Home Integrations
+
+### 🏠 **Home Assistant Integration**
+
+```yaml
+# configuration.yaml
+automation:
+  - alias: "KinAI Welcome Home"
+    trigger:
+      platform: webhook
+      webhook_id: kinai_person_detected
+    action:
+      - service: light.turn_on
+        target:
+          entity_id: light.living_room
+      - service: climate.set_temperature
+        target:
+          entity_id: climate.main_ac
+        data:
+          temperature: 22
+      - service: notify.mobile_app
+        data:
+          message: "{{ trigger.json.greeting_message }}"
+```
+
+### 🎵 **Jellyfin Music Control**
+
+```python
+# Automated playlist management
+async def trigger_music_playbook(person_name: str, time_of_day: str):
+    playlist_mapping = {
+        "morning": "energetic_morning_playlist",
+        "evening": "relaxing_evening_playlist",
+        "Ila": "ila_favorite_playlist",
+        "family": "family_friendly_playlist"
+    }
+    
+    playlist_id = playlist_mapping.get(person_name, playlist_mapping.get(time_of_day))
+    
+    jellyfin_webhook = {
+        "action": "play_playlist",
+        "playlist_id": playlist_id,
+        "shuffle": True,
+        "volume": 0.7
+    }
+    
+    await send_jellyfin_command(jellyfin_webhook)
+```
+
+### 📱 **Telegram Notifications**
+
+```python
+# Smart notification system
+async def send_telegram_alert(event_type: str, details: dict):
+    messages = {
+        "unknown_visitor": f"🚨 Unknown visitor detected at {details['timestamp']}",
+        "family_arrived": f"🏠 {details['person_name']} arrived home",
+        "security_alert": f"⚠️ Security event: {details['description']}"
+    }
+    
+    message = messages.get(event_type, "📊 KinAI system update")
+    
+    telegram_payload = {
+        "chat_id": TELEGRAM_CHAT_ID,
+        "text": message,
+        "parse_mode": "HTML"
+    }
+    
+    if details.get('image'):
+        # Send photo with caption
+        telegram_payload["photo"] = details['image']
+```
+
+---
+
+## ⚙️ Configuration Management
+
+### 📋 **config.ini Complete Reference**
+
+```ini
+[Paths]
+FOOTAGE_DIR = /app/footage                    # Training video directory
+MODELS_DIR = /app/models                      # AI model storage
+DETECTED_FACES_DIR = /app/detected_faces      # Detection image archive
+LOG_DIR = /app/logs                           # System logs directory
+
+[Settings]
+THRESHOLD = 0.6                               # Facial recognition similarity threshold
+MIN_CONFIDENCE = 0.5                          # Minimum detection confidence
+COOLDOWN_PERIOD = 30                          # Seconds between duplicate detections
+DETECTION_SIZE = 320                          # Face detection input resolution
+MAX_FACES_PER_FRAME = 10                      # Maximum faces to process per frame
+FRAME_SKIP = 1                                # Process every N frames (performance)
+
+[Cameras]
+CAMERA_0 = /dev/video4                        # Primary USB camera
+CAMERA_1 = rtsp://192.168.1.100:554/stream   # IP camera RTSP stream
+CAMERA_2 = http://192.168.1.101/mjpeg         # HTTP MJPEG stream
+ENABLE_CAMERA_0 = true                        # Enable/disable specific cameras
+ENABLE_CAMERA_1 = true
+ENABLE_CAMERA_2 = false
+
+[Webhooks]
+SINGLE_KNOWN = http://fastapi:8000/webhook/single_known
+FAMILY_PROFILE = HTTP://fastapi:8000/webhook/family_profile
+UNKNOWN_WITH_KNOWN = http://fastapi:8000/webhook/unknown_with_known
+TRACK_SUSPECT = http://fastapi:8000/webhook/track_suspect
+NO_DETECTION = http://fastapi:8000/webhook/no_detection
+TIMEOUT = 10                                  # Webhook timeout in seconds
+RETRY_ATTEMPTS = 3                            # Failed webhook retry count
+
+[Logging]
+LOG_DIR = /app/logs                           # Log file directory
+LOG_LEVEL = DEBUG                             # DEBUG, INFO, WARNING, ERROR
+MAX_LOG_SIZE = 100MB                          # Maximum individual log file size
+LOG_RETENTION_DAYS = 30                       # Days to keep old logs
+ENABLE_CONSOLE_LOGGING = true                 # Console output for debugging
+
+[ModelSettings]
+YOLO_CONFIDENCE = 0.5                         # YOLOv8 person detection threshold
+YOLO_IOU = 0.45                              # Non-maximum suppression threshold
+FACE_CONFIDENCE = 0.6                         # InsightFace detection threshold
+EMBEDDING_DIMENSION = 512                     # Facial embedding dimensions
+SIMILARITY_METRIC = cosine                    # cosine, euclidean, manhattan
+GPU_MEMORY_FRACTION = 0.8                     # GPU memory allocation limit
+
+[Automation]
+ENABLE_LIGHTS = true                          # Smart lighting control
+ENABLE_MUSIC = true                           # Automated music playback
+ENABLE_CLIMATE = true                         # Climate control automation
+ENABLE_NOTIFICATIONS = true                   # Push notifications
+SUNSET_OFFSET_MINUTES = -30                   # Trigger automation before/after sunset
+MAX_AUTOMATION_FREQUENCY = 300                # Seconds between automation triggers
+
+[Security]
+UNKNOWN_VISITOR_ALERT = true                  # Alert on unknown visitors
+SUSPICIOUS_ACTIVITY_THRESHOLD = 5             # Multiple unknowns threshold
+VISITOR_TRACKING_DAYS = 30                    # Days to track unknown visitors
+ENABLE_PHOTO_ARCHIVE = true                   # Save detection photos
+PHOTO_RETENTION_DAYS = 90                     # Days to keep detection photos
+```
+
+### 🌍 **Environment Variables Reference**
+
+```bash
+# Database Configuration
+DATABASE_URL=postgresql://kinai_user:secure_password@172.17.0.1:5432/kinai
+SQLALCHEMY_POOL_SIZE=20                       # Connection pool size
+SQLALCHEMY_MAX_OVERFLOW=30                    # Additional connections beyond pool
+SQLALCHEMY_POOL_TIMEOUT=30
